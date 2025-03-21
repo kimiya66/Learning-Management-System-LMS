@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.finalproject.lmsapp</groupId>
+  <artifactId>lms-app</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <!-- JUnit 5 Dependencies -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.12.0</version> <!-- Ensure consistent version for all JUnit dependencies -->
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.12.0</version> <!-- Same version as the API -->
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-engine</artifactId>
+        <version>1.12.0</version> <!-- Add junit-platform-engine -->
+        <scope>test</scope>
+    </dependency>
+
+    <!-- SQLite JDBC Dependency -->
+    <dependency>
+        <groupId>org.xerial</groupId>
+        <artifactId>sqlite-jdbc</artifactId>
+        <version>3.43.2.1</version> <!-- SQLite version -->
+    </dependency>
+
+    <!-- SLF4J for logging -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>1.7.32</version>  <!-- Consider using a stable version like 1.7.x -->
+    </dependency>
+  </dependencies>
+</project>
